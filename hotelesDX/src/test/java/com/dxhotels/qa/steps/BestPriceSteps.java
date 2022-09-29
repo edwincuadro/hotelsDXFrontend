@@ -3,6 +3,7 @@ package com.dxhotels.qa.steps;
 import com.dxhotels.qa.models.BookingData;
 import com.dxhotels.qa.tasks.Booking;
 import com.dxhotels.qa.tasks.OpenBrowser;
+import com.dxhotels.qa.tasks.SelectBestPrice;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -40,5 +41,6 @@ public class BestPriceSteps {
 
     @Then("^user can select the cheaper hotel price$")
     public void userCanSelectTheCheaperHotelPrice() {
+        OnStage.theActorInTheSpotlight().attemptsTo(SelectBestPrice.selectBestPrice());
     }
 }

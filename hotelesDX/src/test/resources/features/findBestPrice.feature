@@ -7,5 +7,5 @@ Feature: Find the cheaper hotel price
     Given user is on the site
     When user input details
       | location      | checkIn   | checkOut  |
-      | San Francisco | 9/28/2022 | 9/29/2022 |
+      | San Francisco | 9/30/2022 | 9/29/2022 |
     Then user can select the cheaper hotel price
