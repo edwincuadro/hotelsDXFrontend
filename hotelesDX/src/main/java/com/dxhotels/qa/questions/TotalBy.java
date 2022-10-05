@@ -11,7 +11,7 @@ public class TotalBy implements Question<String> {
         int days = actor.recall("days");
         double total = Double.parseDouble(actor.recall("cheaper"));
         total = total * days;
-        return decimals(total);
+        return decimals(total).replace(",", ".");
     }
     private String decimals(double total){
         DecimalFormat mf = new DecimalFormat("0.00");

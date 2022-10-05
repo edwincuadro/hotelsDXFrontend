@@ -1,4 +1,4 @@
-package com.dxhotels.qa.calculator;
+package com.dxhotels.qa.utils;
 
 import java.util.ArrayList;
 import java.util.List;

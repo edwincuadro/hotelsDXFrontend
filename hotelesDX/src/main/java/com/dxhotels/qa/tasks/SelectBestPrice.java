@@ -1,12 +1,9 @@
 package com.dxhotels.qa.tasks;
 
-import com.dxhotels.qa.calculator.CalculePrice;
-import com.dxhotels.qa.interactions.Wait;
-import com.dxhotels.qa.ui.Hotels;
+import com.dxhotels.qa.utils.CalculePrice;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
-import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.matchers.WebElementStateMatchers;
 import net.serenitybdd.screenplay.waits.WaitUntil;
@@ -14,7 +11,6 @@ import net.serenitybdd.screenplay.waits.WaitUntil;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.dxhotels.qa.ui.HotelSearch.SEARCH_RESULTS;
 import static com.dxhotels.qa.ui.Hotels.*;
 
 public class SelectBestPrice implements Task {

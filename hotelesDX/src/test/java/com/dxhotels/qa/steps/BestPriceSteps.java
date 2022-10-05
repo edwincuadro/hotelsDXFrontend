@@ -45,6 +45,7 @@ public class BestPriceSteps {
 
     @Then("^user can select the cheaper hotel price and \"([^\"]*)\"$")
     public void userCanSelectTheCheaperHotelPrice(String totalPay) {
+        OnStage.theActorInTheSpotlight().attemptsTo(SelectBestPrice.selectBestPrice());
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(TotalBy.days(),
                 Matchers.equalTo(totalPay)), GivenWhenThen.seeThat(ValueBy.pay(), Matchers.equalTo(totalPay)));
     }

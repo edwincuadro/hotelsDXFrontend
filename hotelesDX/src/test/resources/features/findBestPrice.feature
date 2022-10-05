@@ -12,4 +12,4 @@ Feature: Find the cheaper hotel price
 
     Examples:
       | total  |
-      | 222.00 |
+      | 598.00 |
