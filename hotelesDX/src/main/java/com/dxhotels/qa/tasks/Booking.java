@@ -1,15 +1,14 @@
 package com.dxhotels.qa.tasks;
 
+import com.dxhotels.qa.interactions.Wait;
 import com.dxhotels.qa.models.BookingData;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
-import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import org.openqa.selenium.Keys;
 
 import static com.dxhotels.qa.ui.HotelSearch.*;
-import static com.dxhotels.qa.ui.Hotels.PRICE;
 
 public class Booking implements Task {
     private BookingData bookingData;

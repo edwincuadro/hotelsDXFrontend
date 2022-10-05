@@ -21,5 +21,11 @@ public class HotelSearch {
     public static final Target SEARCH_BUTTON = Target
             .the("Search")
             .locatedBy("//div[@aria-label='SEARCH']//div[@class='dx-button-content']");
+
+    public static final Target SEARCH_RESULTS = Target
+            .the("Search")
+            .locatedBy("//div[@class='dx-content dx-content-content dx-transition-inner-wrapper dx-active-view']//div[@class='hotels content']");
+
+
 }
 

@@ -3,9 +3,13 @@ Feature: Find the cheaper hotel price
   I Want to looking for the cheaper hotel price
   To give it to the client
 
-  Scenario: Looking for the cheaper hotel price
+  Scenario Outline: Looking for the cheaper hotel price
     Given user is on the site
     When user input details
-      | location      | checkIn   | checkOut  |
-      | San Francisco | 9/30/2022 | 9/29/2022 |
-    Then user can select the cheaper hotel price
+      | location      | checkIn    | checkOut   |
+      | San Francisco | 10/06/2022 | 10/07/2022 |
+    Then user can select the cheaper hotel price and "<total>"
+
+    Examples:
+      | total  |
+      | 222.00 |
